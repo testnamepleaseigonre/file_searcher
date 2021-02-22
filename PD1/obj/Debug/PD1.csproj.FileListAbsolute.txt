@@ -1,0 +1,10 @@
+C:\Users\valde\source\repos\PD1\obj\Debug\PD1.csprojAssemblyReference.cache
+C:\Users\valde\source\repos\PD1\obj\Debug\PD1.Form1.resources
+C:\Users\valde\source\repos\PD1\obj\Debug\PD1.Properties.Resources.resources
+C:\Users\valde\source\repos\PD1\obj\Debug\PD1.csproj.GenerateResource.cache
+C:\Users\valde\source\repos\PD1\obj\Debug\PD1.csproj.CoreCompileInputs.cache
+C:\Users\valde\source\repos\PD1\bin\Debug\PD1.exe.config
+C:\Users\valde\source\repos\PD1\bin\Debug\PD1.exe
+C:\Users\valde\source\repos\PD1\bin\Debug\PD1.pdb
+C:\Users\valde\source\repos\PD1\obj\Debug\PD1.exe
+C:\Users\valde\source\repos\PD1\obj\Debug\PD1.pdb

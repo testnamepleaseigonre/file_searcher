@@ -1,0 +1,39 @@
+//Top Directory Only
+            progressLabelChange(searchPath);
+            foreach (string file in Directory.GetFiles(searchPath, "*", SearchOption.TopDirectoryOnly))
+            {
+                progressBarFill();
+                if (searchFileName == Path.GetFileNameWithoutExtension(file))
+                {
+                    //Console.WriteLine($"File [{Path.GetFileName(file)}] found!");
+                    //Console.WriteLine(file.ToString()); //Full Path
+                    //Console.WriteLine(Path.GetDirectoryName(file).ToString());
+                    finalList.Add(Path.GetDirectoryName(file).ToString());
+                    //itemFound = true;
+                }
+            }
+
+            //Sub Directories
+            foreach (string dir in dirs)
+            {
+                progressBarFill();
+                progressLabelChange(dir);
+                if (dir == Path.GetDirectoryName(dir) + "\\" + searchFileName)
+                {
+                    //Console.WriteLine($"Directory [{Path.GetFileName(dir)}] found!");
+                    //Console.WriteLine(dir.ToString()); //Full Path
+                    //Console.WriteLine(Path.GetDirectoryName(dir).ToString());
+                    finalList.Add(Path.GetDirectoryName(dir).ToString());
+                }
+                foreach (string file in Directory.GetFiles(dir, "*", SearchOption.TopDirectoryOnly))
+                {
+                    progressBarFill();
+                    if (searchFileName == Path.GetFileNameWithoutExtension(file))
+                    {
+                        //Console.WriteLine($"File [{Path.GetFileName(file)}] found!");
+                        //Console.WriteLine(file.ToString()); //Full Path
+                        //Console.WriteLine(Path.GetDirectoryName(file).ToString());
+                        finalList.Add(Path.GetDirectoryName(file).ToString());
+                    }
+                }
+            }
